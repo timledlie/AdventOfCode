@@ -1,0 +1,272 @@
+1 x 25 {'ab'}
+
+3 x 122 {'bb', 'aa', 'ba'}
+
+4 x 100 {'abb', 'bba', 'aab', 'aaa'}
+
+15 x 111 {'bbabb', 'abaab', 'aabbb', 'abbba', 'baaba', 'bbbba', 'bbaaa', 'babba', 'aaaaa', 'aabab', 'abbab', 'aaaab', 'ababa', 'aaaba', 'aabaa'}
+
+62 x 71 {'ababbbb', 'aaaaaba', 'bbbbaab', 'abaaaab', 'aababbb', 'babbabb', 'abbaabb', 'bababaa', 'bbaaaab', 'ababaaa', 'bbabbab', 'baabaab', 'aabaaaa', 'babaabb', 'abbbbba', 'abaabbb', 'baaabaa', 'aabaaab', 'babbbbb', 'abaaaaa', 'bbabaaa', 'baaaabb', 'babbaaa', 'babbbab', 'bbbbabb', 'abbbaab', 'bababba', 'aaaabbb', 'baabbaa', 'abaaabb', 'abbbabb', 'aabbaab', 'abaaaba', 'bbabbbb', 'aabbaaa', 'abbbbbb', 'bbbbbab', 'baabbbb', 'baababa', 'abaabaa', 'abbbaaa', 'abababb', 'abbabab', 'babaaaa', 'baabaaa', 'abaabba', 'aaaabba', 'aaabbab', 'ababbaa', 'aabbbaa', 'aaababa', 'aababaa', 'babbbba', 'bbbaaab', 'ababaab', 'bababab', 'abababa', 'aabbbbb', 'babaaab', 'bbbbaaa', 'bbaabbb', 'bbbbaba'}
+
+5 x 55 {'bbab', 'abaa', 'abab', 'bbba', 'babb'}
+
+8 x 123 {'aaba', 'bbab', 'abbb', 'aaab', 'baba', 'abab', 'baab', 'aabb'}
+
+3 x 104 {'bbb', 'bab', 'baa'}
+
+1 x 19 {'baa'}
+
+2 x 56 {'bb', 'ba'}
+
+10 x 60 {'baaa', 'aaba', 'aaab', 'babb', 'abaa', 'bbba', 'bbbb', 'baab', 'aabb', 'aaaa'}
+
+17 x 75 {'abaab', 'aabbb', 'abbba', 'bbbba', 'babba', 'bbaaa', 'babbb', 'baabb', 'baaaa', 'bbbaa', 'abbbb', 'abbab', 'aaaab', 'ababa', 'bbbab', 'aabaa', 'abaaa'}
+
+5 x 6 {'bba', 'bbb', 'abb', 'bab', 'baa'}
+
+2 x 62 {'bb', 'aa'}
+
+5 x 101 {'aaba', 'bbab', 'abba', 'bbbb', 'aaaa'}
+
+3 x 128 {'abb', 'bba', 'aab'}
+
+2 x 34 {'bba', 'aaa'}
+
+11 x 65 {'bbaa', 'bbab', 'abbb', 'aaab', 'baba', 'abaa', 'abab', 'bbbb', 'baab', 'aabb', 'aaaa'}
+
+6 x 50 {'aaab', 'abab', 'bbba', 'babb', 'baba', 'aaaa'}
+
+9 x 2 {'aaba', 'bbaa', 'aaab', 'abaa', 'abab', 'abba', 'bbbb', 'aabb', 'aaaa'}
+
+2 x 133 {'bbb', 'aaa'}
+
+1 x 85 {'abb'}
+
+1 x 125 {'ba'}
+
+5 x 118 {'aab', 'aaa', 'abb', 'aba', 'bab'}
+
+4 x 135 {'bba', 'aba', 'aaa', 'bab'}
+
+1 x 28 {'aa'}
+
+5 x 110 {'bba', 'bbb', 'abb', 'aba', 'baa'}
+
+9 x 91 {'bbaa', 'aaba', 'abbb', 'aaab', 'baab', 'abab', 'bbbb', 'babb', 'aaaa'}
+
+3 x 73 {'bb', 'aa', 'ab'}
+
+9 x 80 {'baaa', 'bbaa', 'aaba', 'abaa', 'abab', 'abba', 'bbbb', 'babb', 'baba'}
+
+8 x 124 {'baaa', 'bbaa', 'bbab', 'abbb', 'bbba', 'abba', 'aabb', 'aaaa'}
+
+3 x 87 {'aa', 'ab', 'ba'}
+
+10 x 43 {'baaa', 'aaab', 'abaa', 'abab', 'bbba', 'abba', 'bbbb', 'baab', 'aabb', 'aaaa'}
+
+4 x 66 {'abb', 'aba', 'bbb', 'baa'}
+
+66 x 106 {'baabbba', 'baaaaba', 'abbabaa', 'bbbabba', 'abbabbb', 'bbabbba', 'baaabab', 'bbbbbbb', 'bbbbbaa', 'bbbaabb', 'babbaba', 'abbbaba', 'bbaaabb', 'aaabaab', 'bbababb', 'aabbbba', 'abbaaaa', 'bababbb', 'aaabbbb', 'bbbabab', 'abaabab', 'bbbabaa', 'abbaaab', 'bbbaaaa', 'bbababa', 'bbbabbb', 'ababbab', 'aaababb', 'babbaab', 'aaabaaa', 'abbabba', 'bbbbbba', 'abbaaba', 'aaaabab', 'aabbbab', 'ababbba', 'bbabbaa', 'baaaaab', 'bbbaaba', 'bbaaaaa', 'baaabba', 'aabbabb', 'bbaabaa', 'bbaaaba', 'bbabaab', 'aaaaaaa', 'aaabbaa', 'babaaba', 'aabaaba', 'baaabbb', 'aababba', 'aabbaba', 'aabaabb', 'babbbaa', 'abbbbaa', 'aaaaabb', 'abbbbab', 'aaaabaa', 'bbaabba', 'aababab', 'baaaaaa', 'bbaabab', 'baabbab', 'baababb', 'aaabbba', 'aaaaaab'}
+
+7 x 137 {'baaa', 'bbab', 'abbb', 'babb', 'bbba', 'baab', 'baba'}
+
+2 x 93 {'bb', 'ab'}
+
+8 x 129 {'baaa', 'bbaa', 'abbb', 'aaab', 'abaa', 'bbbb', 'baab', 'aaaa'}
+
+3 x 12 {'abb', 'bba', 'bbb'}
+
+5 x 45 {'abbb', 'abaa', 'bbba', 'bbbb', 'babb'}
+
+20 x 102 {'aabbb', 'babab', 'bbaab', 'bbaaa', 'aaaab', 'aaaba', 'abbaa', 'abaaa', 'aabba', 'ababa', 'aabaa', 'bbabb', 'abaab', 'aaaaa', 'bbbba', 'baabb', 'aaabb', 'abbbb', 'ababb', 'bbbbb'}
+
+15 x 24 {'baaba', 'aabbb', 'abaab', 'babba', 'baaaa', 'abbba', 'aaabb', 'abbbb', 'aabba', 'abbab', 'bbbab', 'aabaa', 'abaaa', 'ababb', 'bbbbb'}
+
+31 x 14 {'baabbb', 'bbbaab', 'babbaa', 'bababb', 'ababab', 'bbaaba', 'aaabab', 'bbaabb', 'abbaab', 'baabaa', 'babbbb', 'aaaabb', 'abaaaa', 'abbbaa', 'bbbbab', 'bababa', 'aababb', 'baaabb', 'aaaaab', 'baaaaa', 'abaaba', 'babaab', 'bbabab', 'aaaaaa', 'babaaa', 'abbaba', 'aaaaba', 'bbaaab', 'baaaba', 'bbbaba', 'bbabbb'}
+
+4 x 57 {'abb', 'bba', 'bbb', 'baa'}
+
+7 x 70 {'bbaa', 'aaba', 'abab', 'abba', 'babb', 'aabb', 'aaaa'}
+
+33 x 51 {'baabbb', 'aabbbb', 'bbaaaa', 'bbaaba', 'aabbaa', 'aabaab', 'bbbbaa', 'baabaa', 'babbbb', 'abbbaa', 'babbab', 'bbbbbb', 'abbbab', 'abbbbb', 'abbbba', 'aabaaa', 'aaabaa', 'baaaaa', 'bbbbba', 'abbaaa', 'aabbba', 'babaab', 'bbabab', 'aaaaaa', 'baabba', 'babaaa', 'abbaba', 'bbabba', 'bbaaab', 'baaaba', 'ababbb', 'aababa', 'abaaba'}
+
+3 x 26 {'bba', 'aba', 'aaa'}
+
+3 x 15 {'aba', 'bbb', 'bab'}
+
+128 x 42 {'bbbbbbaa', 'bbbaaabb', 'babbbaba', 'aabbaaab', 'bbaabbab', 'babbbbaa', 'babbaaba', 'abbbabaa', 'abbabbba', 'abaababb', 'babbaaaa', 'bbbbabab', 'baaaaaaa', 'baabbabb', 'bbabbbaa', 'babaabab', 'abbababb', 'aababaab', 'baaabbba', 'bbbbbbbb', 'babbabba', 'aababbbb', 'aaaaaabb', 'babbabbb', 'bbaaaaab', 'bbbbaaaa', 'aaaababb', 'aaababab', 'abbbbaab', 'ababaaaa', 'baabbaba', 'aabababb', 'ababaaab', 'abbbbaba', 'abbbaabb', 'abaaaabb', 'baababba', 'aabaaaaa', 'baabaaba', 'abbbbaaa', 'abaaabab', 'bbbabbba', 'bbabbaab', 'bbbabaab', 'abaaabbb', 'abababaa', 'abbabbaa', 'aabaabbb', 'abbaabab', 'aabababa', 'bbabaaba', 'bbaaabba', 'aababaaa', 'abbbbabb', 'aaaaaaaa', 'bbaabbba', 'aabbabab', 'bbaaabab', 'aabaaabb', 'bbbaabab', 'ababaabb', 'aabbaaba', 'ababbabb', 'aaaaaaab', 'bababbba', 'babbaaab', 'babbabaa', 'aabbaabb', 'aaaaabab', 'abaabbab', 'bbbababb', 'aaabaaaa', 'bbbaabaa', 'aaabaaba', 'bbababbb', 'baaabaaa', 'aabbbbab', 'abababab', 'baaabbbb', 'aaabbaba', 'bbbbabaa', 'abbbabbb', 'bbbbabbb', 'baaaaabb', 'bbbbaabb', 'baaabbaa', 'baababab', 'aabbabbb', 'babbbbab', 'aabaabaa', 'aaabbbaa', 'abaaaaba', 'bbbaaaaa', 'baabbbab', 'abbbbbab', 'aabaaaba', 'bbabbaba', 'ababbaab', 'aabbbaab', 'abbababa', 'baabbbba', 'bbbbbbba', 'baaaaaab', 'abbaaaab', 'abaaaaab', 'baaaabaa', 'bbbaabba', 'bbaaaaaa', 'aaabbaab', 'bbbabbaa', 'aabbbaba', 'bababbab', 'bbbababa', 'abaaabba', 'abababba', 'aaaaaaba', 'baabaabb', 'bbbbaaba', 'bbbbabba', 'bbaaaaba', 'baaababb', 'baaaabab', 'bbaaabbb', 'bbbaaaba', 'aababbaa', 'bbaababb', 'abbaaabb', 'baaabaab'}
+
+7 x 79 {'bba', 'bbb', 'aaa', 'abb', 'aba', 'bab', 'baa'}
+
+3 x 5 {'bba', 'aab', 'aaa'}
+
+6 x 74 {'bbb', 'aaa', 'abb', 'aba', 'bab', 'baa'}
+
+5 x 18 {'bba', 'aab', 'abb', 'aba', 'bab'}
+
+9 x 20 {'baaa', 'bbab', 'abbb', 'aaab', 'abaa', 'bbba', 'bbbb', 'baab', 'baba'}
+
+6 x 114 {'aaba', 'aaab', 'abab', 'babb', 'aabb', 'aaaa'}
+
+6 x 37 {'bba', 'aab', 'aaa', 'abb', 'bab', 'baa'}
+
+4 x 47 {'aba', 'bbb', 'bab', 'baa'}
+
+4 x 107 {'aba', 'aab', 'bab', 'baa'}
+
+2 x 69 {'bba', 'aab'}
+
+3 x 32 {'bbb', 'aaa', 'bab'}
+
+3 x 76 {'aba', 'aaa', 'bab'}
+
+8 x 38 {'bba', 'aab', 'bbb', 'aaa', 'abb', 'aba', 'bab', 'baa'}
+
+12 x 119 {'bbbaa', 'ababb', 'abbbb', 'aabab', 'aabba', 'ababa', 'babaa', 'bbbab', 'aaaba', 'abbaa', 'abaaa', 'aabaa'}
+
+128 x 8 {'bbbbbbaa', 'bbbaaabb', 'babbbaba', 'aabbaaab', 'bbaabbab', 'babbbbaa', 'babbaaba', 'abbbabaa', 'abbabbba', 'abaababb', 'babbaaaa', 'bbbbabab', 'baaaaaaa', 'baabbabb', 'bbabbbaa', 'babaabab', 'abbababb', 'aababaab', 'baaabbba', 'bbbbbbbb', 'babbabba', 'aababbbb', 'aaaaaabb', 'babbabbb', 'bbaaaaab', 'bbbbaaaa', 'aaaababb', 'aaababab', 'abbbbaab', 'ababaaaa', 'baabbaba', 'aabababb', 'ababaaab', 'abbbbaba', 'abbbaabb', 'abaaaabb', 'baababba', 'aabaaaaa', 'baabaaba', 'abbbbaaa', 'abaaabab', 'bbbabbba', 'bbabbaab', 'bbbabaab', 'abaaabbb', 'abababaa', 'abbabbaa', 'aabaabbb', 'abbaabab', 'aabababa', 'bbabaaba', 'bbaaabba', 'aababaaa', 'abbbbabb', 'aaaaaaaa', 'bbaabbba', 'aabbabab', 'bbaaabab', 'aabaaabb', 'bbbaabab', 'ababaabb', 'aabbaaba', 'ababbabb', 'aaaaaaab', 'bababbba', 'babbaaab', 'babbabaa', 'aabbaabb', 'aaaaabab', 'abaabbab', 'bbbababb', 'aaabaaaa', 'bbbaabaa', 'aaabaaba', 'bbababbb', 'baaabaaa', 'aabbbbab', 'abababab', 'baaabbbb', 'aaabbaba', 'bbbbabaa', 'abbbabbb', 'bbbbabbb', 'baaaaabb', 'bbbbaabb', 'baaabbaa', 'baababab', 'aabbabbb', 'babbbbab', 'aabaabaa', 'aaabbbaa', 'abaaaaba', 'bbbaaaaa', 'baabbbab', 'abbbbbab', 'aabaaaba', 'bbabbaba', 'ababbaab', 'aabbbaab', 'abbababa', 'baabbbba', 'bbbbbbba', 'baaaaaab', 'abbaaaab', 'abaaaaab', 'baaaabaa', 'bbbaabba', 'bbaaaaaa', 'aaabbaab', 'bbbabbaa', 'aabbbaba', 'bababbab', 'bbbababa', 'abaaabba', 'abababba', 'aaaaaaba', 'baabaabb', 'bbbbaaba', 'bbbbabba', 'bbaaaaba', 'baaababb', 'baaaabab', 'bbaaabbb', 'bbbaaaba', 'aababbaa', 'bbaababb', 'abbaaabb', 'baaabaab'}
+
+2 x 21 {'bab', 'baa'}
+
+29 x 58 {'baabbb', 'bbbaab', 'aabbbb', 'abbabb', 'ababab', 'aabbaa', 'aabaab', 'ababaa', 'babbbb', 'aaaabb', 'abaaaa', 'bbbbab', 'babbab', 'ababba', 'baaaab', 'abbbab', 'abbbbb', 'abaabb', 'bbbaaa', 'aabaaa', 'bbbaba', 'aaabaa', 'abbaaa', 'babaaa', 'bbbabb', 'bbaaab', 'aababa', 'abbbba', 'abaaab'}
+
+21 x 64 {'baaba', 'babba', 'babbb', 'bbbaa', 'babab', 'aabab', 'babaa', 'aaaba', 'abbaa', 'baaaa', 'aabba', 'ababa', 'aabaa', 'abaab', 'aaaaa', 'bbbba', 'abbba', 'baabb', 'aaabb', 'ababb', 'bbbbb'}
+
+16 x 68 {'bbaba', 'baaba', 'abbba', 'bbbba', 'aaaaa', 'bbaaa', 'abaab', 'babbb', 'bbbaa', 'abbaa', 'abbbb', 'ababa', 'bbbab', 'aabaa', 'abaaa', 'bbbbb'}
+
+17 x 1 {'abaab', 'aabbb', 'bbbba', 'babba', 'baaaa', 'baaba', 'aaaaa', 'bbbaa', 'aabba', 'abbab', 'aaaba', 'babab', 'abbbb', 'abaaa', 'aabaa', 'baaab', 'bbbbb'}
+
+1 x 53 {'a'}
+
+7 x 81 {'bba', 'aab', 'bbb', 'aaa', 'abb', 'aba', 'bab'}
+
+13 x 86 {'bbaab', 'aabbb', 'baaaa', 'babbb', 'bbaaa', 'bbbaa', 'aabba', 'abbab', 'ababa', 'babaa', 'aaaba', 'baaab', 'bbbbb'}
+
+11 x 90 {'bbaa', 'bbab', 'aaba', 'abbb', 'abaa', 'abab', 'bbba', 'abba', 'bbbb', 'baab', 'aaaa'}
+
+3 x 82 {'abb', 'aab', 'bab'}
+
+10 x 95 {'baaa', 'bbab', 'abbb', 'abaa', 'baab', 'bbba', 'abba', 'bbbb', 'babb', 'aabb'}
+
+4 x 27 {'bba', 'bbb', 'aaa', 'aab'}
+
+66 x 120 {'baabbba', 'abaaaab', 'abbabaa', 'bbbabba', 'aababbb', 'bbbbbbb', 'babbaba', 'bbabbab', 'aaabaab', 'baabaab', 'abbbbba', 'aabbbba', 'baaabaa', 'abbaaaa', 'babbbbb', 'aabaaab', 'bbabaaa', 'bababbb', 'aaabbbb', 'bbbabab', 'abaabab', 'babbaaa', 'babbbab', 'aaaabbb', 'bbbaaaa', 'baabbaa', 'ababbab', 'abbbabb', 'aaabaaa', 'abbabba', 'bbabbbb', 'bbbbbba', 'aabbaaa', 'abbbbbb', 'abbbaaa', 'baabbbb', 'baababa', 'aabbbab', 'ababbba', 'bbbaaba', 'bbaaaaa', 'aabbabb', 'abaabba', 'bbaabaa', 'baabaaa', 'bbabaab', 'bbaaaba', 'aaabbaa', 'babaaba', 'aaaabba', 'aaabbab', 'aaababa', 'aababba', 'aababaa', 'babbbaa', 'babbbba', 'bbbaaab', 'abbbbaa', 'aabaabb', 'aaaabaa', 'bbaabba', 'aabbbbb', 'baaaaaa', 'bbbbbaa', 'aaabbba', 'bbaabbb'}
+
+18 x 126 {'bbabb', 'bbaba', 'aabbb', 'bbbba', 'babbb', 'bbaaa', 'baabb', 'aaabb', 'bbbaa', 'ababb', 'abbbb', 'aabab', 'aabba', 'ababa', 'aaaba', 'abbaa', 'aabaa', 'bbbbb'}
+
+1 x 116 {'b'}
+
+19 x 84 {'baaba', 'aabbb', 'babbb', 'babab', 'bbaba', 'bbaab', 'aaaba', 'abbaa', 'abaaa', 'baaab', 'ababa', 'bbbab', 'aabaa', 'abaab', 'aaaaa', 'baabb', 'aaabb', 'abbbb', 'ababb'}
+
+62 x 134 {'aaaaaab', 'ababbbb', 'aaaaaba', 'bbbbaab', 'baaaaba', 'abbabbb', 'bbabbba', 'baaabab', 'babbabb', 'abbaabb', 'bbbaabb', 'abbbaba', 'bababaa', 'bbaaaab', 'bbaaabb', 'ababaaa', 'bbababb', 'aabaaaa', 'babaabb', 'abaabbb', 'abaaaaa', 'baaaabb', 'bbbbabb', 'abbbaab', 'bababba', 'bbbabaa', 'aaababb', 'bbababa', 'bbbabbb', 'abbaaab', 'abaaabb', 'babbaab', 'aabbaab', 'abaaaba', 'abbaaba', 'aaaabab', 'bbbbbab', 'abaabaa', 'bbabbaa', 'baaaaab', 'abababb', 'baaabba', 'babaaab', 'babaaaa', 'abbabab', 'aaaaaaa', 'aabaaba', 'ababbaa', 'baaabbb', 'aabbbaa', 'aabbaba', 'aaaaabb', 'ababaab', 'bababab', 'abbbbab', 'abababa', 'aababab', 'bbaabab', 'baabbab', 'bbbbaaa', 'baababb', 'bbbbaba'}
+
+33 x 78 {'baabbb', 'bbbaab', 'babbaa', 'bababb', 'aaabbb', 'ababaa', 'bbaabb', 'abbaab', 'baabaa', 'babbbb', 'abaaaa', 'abbbaa', 'bababa', 'baaaab', 'bbbbbb', 'abbbbb', 'bbbaaa', 'baaabb', 'baaaaa', 'bbbbba', 'abbaaa', 'babaab', 'bbabab', 'baabba', 'babaaa', 'bbbabb', 'aaaaba', 'aaabba', 'baaaba', 'ababbb', 'aababa', 'abaaab', 'aabbab'}
+
+8 x 96 {'baaa', 'bbaa', 'abbb', 'aabb', 'bbba', 'bbbb', 'babb', 'baba'}
+
+7 x 10 {'bba', 'aab', 'aaa', 'abb', 'aba', 'bab', 'baa'}
+
+3 x 88 {'bb', 'ba', 'ab'}
+
+33 x 40 {'aabbbb', 'abbabb', 'aaabbb', 'bbaaaa', 'aabbaa', 'aabaab', 'bbbbaa', 'ababaa', 'ababba', 'babbab', 'baaaab', 'abbbab', 'abbbbb', 'abaabb', 'bbbbbb', 'bbbaaa', 'aabaaa', 'aaabaa', 'babbba', 'abbaaa', 'bbbbba', 'bbabaa', 'aabbba', 'baabba', 'bbbabb', 'bbabba', 'aaabba', 'aababa', 'ababbb', 'abbbba', 'baabab', 'abaaab', 'aabbab'}
+
+2 x 127 {'bbb', 'bab'}
+
+5 x 59 {'aab', 'aaa', 'abb', 'aba', 'baa'}
+
+16 x 41 {'bbabb', 'bbaba', 'bbaab', 'bbbba', 'aabbb', 'abaab', 'babbb', 'bbaaa', 'aaaaa', 'abbbb', 'aabba', 'abbab', 'bbbab', 'aaaba', 'aabaa', 'ababb'}
+
+10 x 44 {'bbaa', 'aaba', 'abbb', 'abaa', 'abab', 'bbba', 'abba', 'bbbb', 'aabb', 'aaaa'}
+
+6 x 109 {'bba', 'aab', 'abb', 'aba', 'bab', 'baa'}
+
+11 x 49 {'baaa', 'bbaa', 'aaba', 'abbb', 'baba', 'abaa', 'baab', 'bbbb', 'babb', 'aabb', 'aaaa'}
+
+11 x 113 {'bbaa', 'aaba', 'baba', 'abaa', 'baab', 'abab', 'bbba', 'abba', 'babb', 'aabb', 'aaaa'}
+
+35 x 77 {'babbaa', 'bababb', 'aaabbb', 'bbaaaa', 'bbaaba', 'bbbbaa', 'bbaabb', 'abbaab', 'baabaa', 'aaabab', 'abbbaa', 'bababa', 'bbbbbb', 'aababb', 'baaabb', 'babbba', 'aaaaab', 'baaaaa', 'bbbbba', 'bbabaa', 'aabbba', 'babaab', 'bbabab', 'aaaaaa', 'baabba', 'abbaba', 'bbabba', 'aaaaba', 'aaabba', 'baaaba', 'ababbb', 'abaaba', 'baabab', 'bbabbb', 'aabbab'}
+
+2 x 3 {'aa', 'ab'}
+
+7 x 9 {'bbab', 'abbb', 'aaab', 'bbba', 'baab', 'aabb', 'aaaa'}
+
+4 x 98 {'abb', 'aab', 'bbb', 'bab'}
+
+4 x 117 {'abb', 'aab', 'aaa', 'aba'}
+
+3 x 39 {'abaa', 'bbaa', 'bbab'}
+
+9 x 16 {'aaba', 'bbab', 'abbb', 'babb', 'abaa', 'abba', 'bbbb', 'baab', 'aaaa'}
+
+2 x 132 {'bbb', 'baa'}
+
+7 x 63 {'bba', 'aab', 'bbb', 'aaa', 'abb', 'aba', 'baa'}
+
+3 x 22 {'bba', 'bbb', 'baa'}
+
+2 x 89 {'abb', 'bba'}
+
+11 x 115 {'bbaba', 'babba', 'babbb', 'aaabb', 'bbbaa', 'ababa', 'aaaab', 'bbbab', 'babab', 'abaaa', 'ababb'}
+
+6 x 99 {'bba', 'aab', 'bbb', 'abb', 'bab', 'baa'}
+
+2 x 92 {'a', 'b'}
+
+5 x 121 {'bba', 'aab', 'bbb', 'aaa', 'abb'}
+
+6 x 13 {'bba', 'aab', 'bbb', 'aaa', 'abb', 'aba'}
+
+4 x 103 {'aab', 'bbb', 'aaa', 'baa'}
+
+31 x 83 {'aabbbb', 'abbabb', 'ababab', 'bbaaaa', 'bbaaba', 'aabbaa', 'aabaab', 'bbbbaa', 'aaabab', 'aaaabb', 'bbbbab', 'babbab', 'ababba', 'abbbab', 'aababb', 'abaabb', 'abbbba', 'aabaaa', 'bbbaba', 'aaabaa', 'babbba', 'aaaaab', 'bbabaa', 'aabbba', 'aaaaaa', 'abbaba', 'bbabba', 'bbaaab', 'abaaba', 'baabab', 'bbabbb'}
+
+31 x 61 {'bbbaab', 'babbaa', 'bababb', 'abbabb', 'ababab', 'aaabbb', 'aaabab', 'bbaabb', 'abbaab', 'ababaa', 'aaaabb', 'abaaaa', 'bbbbab', 'ababba', 'bababa', 'bbabbb', 'baaaab', 'abaabb', 'aababb', 'bbbaaa', 'baaabb', 'babbba', 'aaaaab', 'bbabaa', 'bbbabb', 'aaaaba', 'aaabba', 'bbbaba', 'baabab', 'abaaab', 'aabbab'}
+
+4 x 130 {'bba', 'bbb', 'bab', 'baa'}
+
+5 x 136 {'aab', 'bbb', 'abb', 'bab', 'baa'}
+
+6 x 30 {'aaba', 'bbaa', 'abab', 'baab', 'baba', 'aaaa'}
+
+6 x 94 {'bba', 'aab', 'aaa', 'aba', 'bab', 'baa'}
+
+10 x 52 {'bbaa', 'aaba', 'abbb', 'baba', 'abaa', 'abab', 'abba', 'bbbb', 'babb', 'aabb'}
+
+3 x 7 {'aab', 'aba', 'baa'}
+
+5 x 97 {'aab', 'bbb', 'abb', 'aba', 'bab'}
+
+5 x 35 {'aaba', 'bbab', 'abbb', 'abba', 'baba'}
+
+4 x 72 {'abb', 'bba', 'bab', 'baa'}
+
+10 x 48 {'baaa', 'bbaa', 'bbab', 'aaba', 'aaab', 'abaa', 'bbba', 'abba', 'baba', 'aaaa'}
+
+3 x 54 {'abb', 'bba', 'bab'}
+
+1 x 131 {'bb'}
+
+7 x 23 {'baaa', 'abbb', 'baba', 'abaa', 'abba', 'bbbb', 'aabb'}
+
+128 x 31 {'abbaabbb', 'abbbabab', 'bbabaabb', 'baaaabbb', 'bbbbbaaa', 'aaabbabb', 'aaaabaab', 'bbaabaaa', 'aabaaaab', 'abaabbba', 'baaababa', 'ababbaaa', 'bbaabbbb', 'aaabbbbb', 'abbaabba', 'bbaababa', 'aabbaaaa', 'babaabba', 'bababaaa', 'abababbb', 'aabbbbbb', 'abaabaab', 'abbbaaaa', 'bbaabbaa', 'abbbbbaa', 'bbabbbba', 'abbabbbb', 'aaabaabb', 'aabbbbaa', 'bbbbbaba', 'aaabbaaa', 'bbbbbabb', 'bbaabaab', 'ababaaba', 'aaaabbba', 'babbbbbb', 'aaaaabba', 'aabbbbba', 'babababa', 'babaabbb', 'bababaab', 'aaaabbab', 'baabbaaa', 'abaaaaaa', 'aabaabab', 'abbaaaaa', 'abaabaaa', 'aaababba', 'ababbbab', 'baabbbbb', 'bbbaaaab', 'baaaaaba', 'aabaabba', 'babaaabb', 'babbabab', 'babaaaaa', 'bababbaa', 'babaaaab', 'aaabbbba', 'abbaabaa', 'baaabbab', 'bababbbb', 'bbbbbbab', 'bbbabaaa', 'bbbbbaab', 'bbababab', 'aaababbb', 'baabaaab', 'baabbbaa', 'babbbaab', 'baababaa', 'aaabaaab', 'bbaaabaa', 'abbbabba', 'bbbabbab', 'aabbbabb', 'babaaaba', 'bbababba', 'bbabbbab', 'bbabbabb', 'bbaaaabb', 'abbaaaba', 'abbabbab', 'bbabbbbb', 'babbbbba', 'bbabbaaa', 'aabbbaaa', 'baababbb', 'abbbaaba', 'ababbaba', 'aaaababa', 'aababbba', 'ababbbba', 'babababb', 'baabaaaa', 'abaaabaa', 'aaaabbaa', 'abaababa', 'aaaaabaa', 'babbaabb', 'baaaabba', 'aaababaa', 'baabbaab', 'bbbaabbb', 'aabbabaa', 'babbbabb', 'aaaabbbb', 'aabbabba', 'aaabbbab', 'abbabaaa', 'abbbaaab', 'bbabaaaa', 'bbabaaab', 'aababbab', 'abbbbbbb', 'abbabaab', 'babbbaaa', 'bbababaa', 'ababbbbb', 'babaabaa', 'abbbbbba', 'aaaaabbb', 'bbbabbbb', 'abaabbbb', 'ababbbaa', 'bbbbaaab', 'aaaabaaa', 'abaabbaa'}
+
+12 x 29 {'baaba', 'bbaba', 'bbaab', 'aaaaa', 'baaaa', 'aaabb', 'bbbaa', 'aabab', 'aaaab', 'aaaba', 'babab', 'ababb'}
+
+3 x 108 {'aba', 'aab', 'bab'}
+
+4 x 33 {'bb', 'aa', 'ba', 'ab'}
+
+3 x 4 {'bbb', 'aaa', 'aba'}
+
+14 x 36 {'bbaba', 'bbaab', 'aabbb', 'abbba', 'baaba', 'babbb', 'aaaaa', 'bbbaa', 'aabab', 'abbab', 'aabba', 'aaaab', 'aaaba', 'ababb'}
+
+6 x 67 {'aaba', 'bbab', 'abaa', 'abba', 'aabb', 'aaaa'}
+
+20 x 105 {'baaba', 'bbbaa', 'babab', 'bbaab', 'aabab', 'abbab', 'aaaab', 'aaaba', 'abbaa', 'abaaa', 'baaab', 'baaaa', 'aabba', 'ababa', 'bbbab', 'bbabb', 'abaab', 'aaaaa', 'bbbba', 'aaabb'}
+
+2 x 46 {'ab', 'ba'}
+
+5 x 17 {'bba', 'bbb', 'aaa', 'abb', 'baa'}
+
+5 x 112 {'bba', 'aab', 'aaa', 'abb', 'baa'}
+
