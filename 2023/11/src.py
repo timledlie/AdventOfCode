@@ -1,8 +1,8 @@
-import itertools
+import itertools, sortedcontainers
 
 
-def find_empty_rows_and_cols(image):
-    empty_rows, empty_cols = set(), set()
+def find_chasm_rows_and_cols(image):
+    empty_rows, empty_cols = sortedcontainers.SortedSet(), sortedcontainers.SortedSet()
     for row in range(len(image)):
         is_empty_row = True
         for col in range(len(image[0])):
@@ -24,21 +24,6 @@ def find_empty_rows_and_cols(image):
     return empty_rows, empty_cols
 
 
-def expand_universe(image):
-    empty_rows, empty_cols = find_empty_rows_and_cols(image)
-    image_expanded = []
-    for row in range(len(image)):
-        row_expanded = []
-        for col in range(len(image[0])):
-            row_expanded.append(image[row][col])
-            if col in empty_cols:
-                row_expanded.append(".")
-        image_expanded.append(row_expanded)
-        if row in empty_rows:
-            image_expanded.append(["."] * (len(image[0]) + len(empty_cols)))
-    return image_expanded
-
-
 def get_galaxy_locations(image):
     galaxy_locations = []
     for row in range(len(image)):
@@ -48,18 +33,28 @@ def get_galaxy_locations(image):
     return galaxy_locations
 
 
-def distance_between_galaxies(a, b):
-    return abs(a[0] - b[0]) + abs(a[1] - b[1])
+def count_subset_within_range(int_set, range_start, range_end):
+    return len(list(int_set.irange(min(range_start, range_end), max(range_start, range_end))))
 
 
-with open("input_sample.txt") as file:
+def distance_between_galaxies(a, b, chasm_rows, chasm_cols, chasm_size):
+    distance_without_chasms = abs(a[0] - b[0]) + abs(a[1] - b[1])
+    n_row_chasms_crossed = count_subset_within_range(chasm_rows, a[0], b[0])
+    n_col_chasms_crossed = count_subset_within_range(chasm_cols, a[1], b[1])
+    return distance_without_chasms \
+        - n_row_chasms_crossed - n_col_chasms_crossed\
+        + chasm_size * (n_row_chasms_crossed + n_col_chasms_crossed)
+
+
+chasm_size = 1000000
+with open("input.txt") as file:
     image = [list(line.strip()) for line in file.readlines()]
 
-image = expand_universe(image)
+chasm_rows, chasm_cols = find_chasm_rows_and_cols(image)
 galaxy_locations = get_galaxy_locations(image)
 
 distances_sum = 0
 for a, b in itertools.combinations(galaxy_locations, 2):
-    distances_sum += distance_between_galaxies(a, b)
+    distances_sum += distance_between_galaxies(a, b, chasm_rows, chasm_cols, chasm_size)
 
 print(distances_sum)
