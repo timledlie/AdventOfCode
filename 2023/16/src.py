@@ -1,5 +1,7 @@
 import sys
-sys.setrecursionlimit(4000)
+sys.setrecursionlimit(5000)
+
+energized_tile_log = set()
 
 
 def follow_light_path(row, col, direction):
@@ -59,6 +61,17 @@ def follow_light_path(row, col, direction):
         return follow_light_path(row - 1, col, "up")
 
 
+def n_energized_tiles(start_row, start_col, start_direction):
+    global energized_tile_log
+    energized_tile_log = set()
+    follow_light_path(start_row, start_col, start_direction)
+
+    energized_tiles = set()
+    for tile in energized_tile_log:
+        energized_tiles.add((tile[0], tile[1]))
+    return len(energized_tiles)
+
+
 objects = {}
 with open("input.txt") as file:
     grid_lines = [line.strip() for line in file.readlines()]
@@ -69,11 +82,12 @@ with open("input.txt") as file:
             if char in ("/", "\\", "|", "-"):
                 objects[(row_index, col_index)] = char
 
-energized_tile_log = set()
-follow_light_path(0, 0, "right")
+n_max = 0
+for row_index in range(n_rows):
+    n_max = max(n_max, n_energized_tiles(row_index, 0, "right"))
+    n_max = max(n_max, n_energized_tiles(row_index, n_cols - 1, "left"))
+for col_index in range(n_cols):
+    n_max = max(n_max, n_energized_tiles(0, col_index, "down"))
+    n_max = max(n_max, n_energized_tiles(n_rows - 1, col_index, "up"))
 
-energized_tiles = set()
-for tile in energized_tile_log:
-    energized_tiles.add((tile[0], tile[1]))
-
-print(len(energized_tiles))
+print(n_max)
