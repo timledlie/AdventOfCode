@@ -52,10 +52,13 @@ def add_step(previous_moves, next_direction):
        (direction == "left" and next_direction == "right"):
         return None
     if direction == next_direction:
-        # can't go more than 3 steps in the same direction
-        if count == 3:
+        # can't go more than 10 steps in the same direction
+        if count == 10:
             return None
         return count + 1, direction
+    # can't go fewer than 4 steps in the same direction
+    if count < 4:
+        return None
     return 1, next_direction
 
 
@@ -67,7 +70,7 @@ def get_neighbors(coords):
 
 def prior_steps_defaults():
     defaults = {}
-    for count, direction in itertools.product((1, 2, 3), ("up", "right", "down", "left")):
+    for count, direction in itertools.product((1, 2, 3, 4, 5, 6, 7, 8, 9, 10), ("up", "right", "down", "left")):
         defaults[(count, direction)] = infinity
     return defaults
 
@@ -100,7 +103,11 @@ frontier.add((0, 0), 0)
 while not frontier.empty():
     current = frontier.pop()
     if current == goal:
-        print(lowest_cost_overall[current])
+        lowest = infinity
+        for (count, direction), lowest_cost in lowest_cost_after_prior_steps[current].items():
+            if count >= 4:
+                lowest = min(lowest, lowest_cost)
+        print(lowest)
         break
 
     for direction, next_node in get_neighbors(current):
