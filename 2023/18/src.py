@@ -1,38 +1,20 @@
+# using the Shoelace Formula: https://en.wikipedia.org/wiki/Shoelace_formula
+area = 0
 with open("input.txt") as file:
-    x, y = 0, 0
-    min_x, max_x, min_y, max_y = 0, 0, 0, 0
-    trench = {(x, y)}
+    x1, y1 = 0, 0
     for line in file.readlines():
-        parts = line.strip().split()
-        direction, count = parts[0], int(parts[1])
-        for i in range(count):
-            if direction == "U":
-                y -= 1
-            elif direction == "R":
-                x += 1
-            elif direction == "D":
-                y += 1
-            elif direction == "L":
-                x -= 1
-            else:
-                exit("poop")
-            trench.add((x, y))
-            min_x = min(min_x, x)
-            min_y = min(min_y, y)
-            max_x = max(max_x, x)
-            max_y = max(max_y, y)
+        x2, y2 = x1, y1
+        text = line.strip().split()[-1]
+        distance, direction = int(text[2:7], 16), int(text[7:8])
+        if direction == 0:
+            x2 = x1 + distance
+        elif direction == 1:
+            y2 = y1 + distance
+        elif direction == 2:
+            x2 = x1 - distance
+        elif direction == 3:
+            y2 = y1 - distance
+        area += (y1 + y2) * (x1 - x2) + distance # add distance to account for the 1-unit width of the trench
+        x1, y1 = x2, y2
 
-
-inside_point = (-47, -232)
-# inside_point = (1, 1)
-
-frontier = [inside_point]
-while frontier:
-    x, y = frontier.pop()
-    trench.add((x, y))
-    for point in ((x + 1, y), (x - 1, y), (x, y + 1), (x, y - 1)):
-        if point not in trench:
-            trench.add(point)
-            frontier.append(point)
-
-print(len(trench))
+print(round(.5 * area) + 1)
