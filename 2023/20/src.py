@@ -1,3 +1,4 @@
+import collections
 from collections import defaultdict
 
 BROADCASTER = "broadcaster"
@@ -100,13 +101,20 @@ for name in out_to_in:
     if name not in modules:
         modules[name] = NoOpModule(name, [])
 
-for push_index in range(1000):
+
+# I used https://graphonline.ru/en/ to visualize the graph and see that the solution would happen when dt, qs, ts, and
+# js were all given a high pulse at the same time, so I altered the program to output that
+feeder_nodes = collections.defaultdict(int)
+for push_index in range(1, 10000):
     cur_pulses = [Pulse(PULSE_LOW, None, BROADCASTER)]
     next_pulses = []
     while cur_pulses:
         for pulse in cur_pulses:
+            if (pulse.origin in ("dt", "qs", "ts", "js")) and (pulse.type == PULSE_HIGH):
+                if pulse.origin not in feeder_nodes:
+                    feeder_nodes[pulse.origin] = push_index
+                    if len(feeder_nodes) == 4:
+                        print(feeder_nodes["dt"] * feeder_nodes["qs"] * feeder_nodes["ts"] * feeder_nodes["js"])
             next_pulses += modules[pulse.destination].process_pulse(pulse)
         cur_pulses = next_pulses
         next_pulses = []
-
-print(Pulse.counts[PULSE_LOW] * Pulse.counts[PULSE_HIGH])
