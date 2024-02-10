@@ -100,18 +100,25 @@ def intcode_computer(machine: Machine, inputs: list):
 
 
 machine_paths = [(Machine(memory_orig), None)]
+is_oxygen_found = False
 n_steps = 0
-while True:
+while len(machine_paths) > 0:
     machine_paths_next = []
     n_steps += 1
     for machine, last_step in machine_paths:
-        for step, step_back, (delta_x, delta_y) in ((1, 2, (0, 1)), (2, 1, (0, -1)), (3, 4, (-1, 0)), (4, 3, (1, 0))):
+        for step, step_back in ((1, 2), (2, 1), (3, 4), (4, 3)):
             if step_back != last_step:
                 status = intcode_computer(machine, [step])
                 if status == 1:
                     machine_paths_next.append((copy.deepcopy(machine), step))
-                    ignore = intcode_computer(machine, [step_back])
+                    intcode_computer(machine, [step_back])
                 if status == 2:
-                    print(n_steps)
-                    exit()
+                    machine_paths_next = [(machine, None)]
+                    is_oxygen_found = True
+                    n_steps = 0
+                    break
+        if is_oxygen_found:
+            is_oxygen_found = False
+            break
     machine_paths = machine_paths_next
+print(n_steps - 1)
