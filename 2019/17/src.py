@@ -1,5 +1,3 @@
-import copy
-
 with open("input.txt") as file:
     memory_orig = [int(n) for n in file.read().strip().split(',')] + [0] * 4000
 
@@ -99,26 +97,22 @@ def intcode_computer(machine: Machine, inputs: list):
             return outputs[0]
 
 
+main_movement_routine = "A,B,A,B,A,C,B,C,A,C"
+A = "L,10,L,12,R,6"
+B = "R,10,L,4,L,4,L,12"
+C = "L,10,R,10,R,6,L,4"
+
+inputs = []
+for line in (main_movement_routine, A, B, C):
+    for c in line:
+        inputs.append(ord(c))
+    inputs.append(ord("\n"))
+inputs.append(ord("n"))
+inputs.append(ord("\n"))
+
 machine = Machine(memory_orig)
-scaffolds = set()
-x, y = 0, 0
 while True:
-    output = intcode_computer(machine, [])
+    output = intcode_computer(machine, inputs)
     if not output:
         break
-    else:
-        print(chr(output), end="")
-        if output == 35:
-            scaffolds.add((x, y))
-        if output == 10:
-            x = 0
-            y += 1
-        else:
-            x += 1
-
-alignment_parameter_sum = 0
-for x, y in scaffolds:
-    if ((x + 1, y) in scaffolds) and ((x - 1, y) in scaffolds) and ((x, y + 1) in scaffolds) and ((x, y - 1) in scaffolds):
-        alignment_parameter_sum += x * y
-
-print(alignment_parameter_sum)
+    print(output)
