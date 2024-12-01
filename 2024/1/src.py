@@ -1,16 +1,17 @@
+from collections import defaultdict
+
 left_list, right_list = [], []
+right_list_counts = defaultdict(int)
 with open("input.txt") as file:
     for line in file.readlines():
         line = line.strip()
         left, right = line.split()
         left_list.append(int(left))
         right_list.append(int(right))
+        right_list_counts[int(right)] += 1
 
-left_list.sort()
-right_list.sort()
+similarity_score = 0
+for n in left_list:
+    similarity_score += n * right_list_counts[n]
 
-sum_distance = 0
-for i in range(len(left_list)):
-    sum_distance += abs(left_list[i] - right_list[i])
-
-print(sum_distance)
+print(similarity_score)
