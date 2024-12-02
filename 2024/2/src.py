@@ -21,9 +21,16 @@ def is_report_safe(report):
     return True
 
 
+def is_report_almost_safe(report):
+    for i in range(len(report)):
+        if is_report_safe(report[:i] + report[i+1:]):
+            return True
+    return False
+
+
 count_safe = 0
 for report in reports:
-    if is_report_safe(report):
+    if is_report_almost_safe(report):
         count_safe += 1
 
 print(count_safe)
