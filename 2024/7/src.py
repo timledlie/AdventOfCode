@@ -15,16 +15,23 @@ def is_solvable(equation):
         next_possible_values = []
         for value in running_possible_values:
             next_value = value + next_number
-            if next_value == equation.test_value:
+            if (next_value == equation.test_value) and len(equation.numbers) == 0:
                 return True
-            if next_value < equation.test_value:
+            if next_value <= equation.test_value:
                 next_possible_values.append(next_value)
 
             next_value = value * next_number
-            if next_value == equation.test_value:
+            if (next_value == equation.test_value) and len(equation.numbers) == 0:
                 return True
-            if next_value < equation.test_value:
+            if next_value <= equation.test_value:
                 next_possible_values.append(next_value)
+
+            next_value = int(str(value) + str(next_number))
+            if (next_value == equation.test_value) and len(equation.numbers) == 0:
+                return True
+            if next_value <= equation.test_value:
+                next_possible_values.append(next_value)
+
         running_possible_values = next_possible_values
     return False
 
