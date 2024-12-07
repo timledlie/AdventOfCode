@@ -1,6 +1,6 @@
 obstructions = set()
-cur_x, cur_y = None, None
-cur_direction = "up"
+start_x, start_y = None, None
+start_dir = "up"
 y = 0
 with open("input.txt") as file:
     for line in file.readlines():
@@ -10,33 +10,49 @@ with open("input.txt") as file:
             if char == "#":
                 obstructions.add((x, y))
             elif char == "^":
-                cur_x, cur_y = x, y
+                start_x, start_y = x, y
             x += 1
         y += 1
 max_x, max_y = x - 1, y - 1
 
-locations_visited = set()
-while (0 <= cur_x <= max_x) and (0 <= cur_y <= max_y):
-    locations_visited.add((cur_x, cur_y))
-    if cur_direction == "up":
-        if (cur_x, cur_y - 1) in obstructions:
-            cur_direction = "right"
-        else:
-            cur_y -= 1
-    elif cur_direction == "right":
-        if (cur_x + 1, cur_y) in obstructions:
-            cur_direction = "down"
-        else:
-            cur_x += 1
-    elif cur_direction == "down":
-        if (cur_x, cur_y + 1) in obstructions:
-            cur_direction = "left"
-        else:
-            cur_y += 1
-    elif cur_direction == "left":
-        if (cur_x - 1, cur_y) in obstructions:
-            cur_direction = "up"
-        else:
-            cur_x -= 1
 
-print(len(locations_visited))
+def is_loop_in_walk(cur_x, cur_y, cur_dir, obstructions):
+    locations_visited = set()
+    while (0 <= cur_x <= max_x) and (0 <= cur_y <= max_y):
+        if (cur_x, cur_y, cur_dir) in locations_visited:
+            return True
+
+        locations_visited.add((cur_x, cur_y, cur_dir))
+
+        if cur_dir == "up":
+            if (cur_x, cur_y - 1) in obstructions:
+                cur_dir = "right"
+            else:
+                cur_y -= 1
+        elif cur_dir == "right":
+            if (cur_x + 1, cur_y) in obstructions:
+                cur_dir = "down"
+            else:
+                cur_x += 1
+        elif cur_dir == "down":
+            if (cur_x, cur_y + 1) in obstructions:
+                cur_dir = "left"
+            else:
+                cur_y += 1
+        elif cur_dir == "left":
+            if (cur_x - 1, cur_y) in obstructions:
+                cur_dir = "up"
+            else:
+                cur_x -= 1
+    
+    return False
+
+
+loop_count = 0
+for x in range(max_x + 1):
+    for y in range(max_y + 1):
+        if (x, y) not in obstructions:
+            if is_loop_in_walk(start_x, start_y, start_dir, obstructions.union({(x, y)})):
+                loop_count += 1
+
+print(loop_count)
