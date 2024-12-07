@@ -17,12 +17,14 @@ def is_solvable(equation):
             next_value = value + next_number
             if next_value == equation.test_value:
                 return True
-            next_possible_values.append(next_value)
+            if next_value < equation.test_value:
+                next_possible_values.append(next_value)
 
             next_value = value * next_number
             if next_value == equation.test_value:
                 return True
-            next_possible_values.append(next_value)
+            if next_value < equation.test_value:
+                next_possible_values.append(next_value)
         running_possible_values = next_possible_values
     return False
 
