@@ -22,12 +22,13 @@ max_x, max_y = x - 1, y - 1
 for frequency in frequencies:
     for loc_a, loc_b in itertools.combinations(antenna_locations[frequency], 2):
         dx, dy = loc_a[0] - loc_b[0], loc_a[1] - loc_b[1]
-        x, y = loc_a[0] + dx, loc_a[1] + dy
-        if (0 <= x <= max_x) and (0 <= y <= max_y):
-            antinode_locations.add((x, y))
-
-        x, y = loc_b[0] - dx, loc_b[1] - dy
-        if (0 <= x <= max_x) and (0 <= y <= max_y):
-            antinode_locations.add((x, y))
+        for step in (-1, 1):
+            multiplier = 0
+            while True:
+                x, y = loc_a[0] + (multiplier * dx), loc_a[1] + (multiplier * dy)
+                if (x < 0) or (x > max_x) or (y < 0) or (y > max_y):
+                    break
+                antinode_locations.add((x, y))
+                multiplier += step
 
 print(len(antinode_locations))
