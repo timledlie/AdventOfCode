@@ -18,11 +18,11 @@ def get_trailhead_score(trailhead, topo_map):
     cur_locations = [trailhead]
     cur_height = 0
     while True:
-        next_locations = set()
+        next_locations = []
         for row, col in cur_locations:
             for delta_row, delta_col in ((1, 0), (-1, 0), (0, 1), (0, -1)):
                 if topo_map[row + delta_row][col + delta_col] == (cur_height + 1):
-                    next_locations.add((row + delta_row, col + delta_col))
+                    next_locations.append((row + delta_row, col + delta_col))
 
         if cur_height == 8:
             return len(next_locations)
