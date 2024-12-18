@@ -15,27 +15,23 @@ for scenario in scenarios:
     claw_configs.append(ClawConfig(*[int(g) for g in m.groups()]))
 
 
-def calculate_min_tokens(config):
-    big_int = 1000000000000000000
-    min_tokens = big_int
-    for a_pushes in range(1, 101):
-        x1 = a_pushes * config.ax
-        y1 = a_pushes * config.ay
-        if (x1 > config.prize_x) or (y1 > config.prize_y):
-            break
-        for b_pushes in range(1, 101):
-            x2 = x1 + b_pushes * config.bx
-            y2 = y1 + b_pushes * config.by
-            if (x2 > config.prize_x) or (y2 > config.prize_y):
-                break
-            if (x2 == config.prize_x) and (y2 == config.prize_y):
-                min_tokens = min(min_tokens, (a_pushes * 3) + b_pushes)
-
-    return 0 if min_tokens == big_int else min_tokens
+def calculate_min_tokens(c, err):
+    # two equations with two unknowns
+    d = c.bx * (c.prize_y + err) - c.by * (c.prize_x + err)
+    e = c.ay * c.bx - c.ax * c.by
+    f = c.ax * (c.prize_y + err) - c.ay * (c.prize_x + err)
+    g = c.ax * c.by - c.ay * c.bx
+    # must be evenly divisible
+    if ((d % e) == 0) and ((f % g) == 0):
+        h = d // e
+        i = f // g
+        if (h > 0) and (i > 0):
+            return (3 * h) + i
+    return 0
 
 
 total_tokens = 0
 for config in claw_configs:
-    total_tokens += calculate_min_tokens(config)
+    total_tokens += calculate_min_tokens(config, 10000000000000)
 
 print(total_tokens)
