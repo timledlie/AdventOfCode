@@ -9,6 +9,11 @@ class Robot:
         return " ".join([str(v) for v in (self.x, self.y, self.vx, self.vy)])
 
 
+points_inside_tree = set()
+for y in range(101):
+    for x_delta in range(-(y // 2), (y // 2) + 1):
+        points_inside_tree.add((50 + x_delta, y))
+
 robots = []
 with open("input.txt") as file:
     for line in file.readlines():
@@ -17,26 +22,18 @@ with open("input.txt") as file:
         vx, vy = tuple([int(vel) for vel in velocity_text[2:].split(",")])
         robots.append(Robot(x, y, vx, vy))
 
-# x_dim, y_dim = 11, 7
 x_dim, y_dim = 101, 103
 
-for second in range(100):
+max_second, max_inside_tree = None, 0
+for second in range(x_dim * y_dim):
+    n_in_tree = 0
     for robot in robots:
         robot.x = (robot.x + robot.vx) % x_dim
         robot.y = (robot.y + robot.vy) % y_dim
+        if (robot.x, robot.y) in points_inside_tree:
+            n_in_tree += 1
+    if n_in_tree > max_inside_tree:
+        max_second = second + 1
+        max_inside_tree = n_in_tree
 
-n_q1, n_q2, n_q3, n_q4 = 0, 0, 0, 0
-x_mid, y_mid = x_dim // 2, y_dim // 2
-for robot in robots:
-    if robot.x < x_mid:
-        if robot.y < y_mid:
-            n_q1 += 1
-        elif robot.y > y_mid:
-            n_q3 += 1
-    elif robot.x > x_mid:
-        if robot.y < y_mid:
-            n_q2 += 1
-        elif robot.y > y_mid:
-            n_q4 += 1
-
-print(n_q1 * n_q2 * n_q3 * n_q4)
+print(max_second)
