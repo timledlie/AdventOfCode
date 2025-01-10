@@ -1,13 +1,18 @@
-def is_design_possible(design, patterns):
+cache = {}
+def count_design_options(design, patterns):
     if len(design) == 0:
-        return True
+        return 1
 
+    if design in cache:
+        return cache[design]
+
+    count = 0
     for pattern in patterns:
         if design.startswith(pattern):
-            if is_design_possible(design[len(pattern):], patterns):
-                return True
+            count += count_design_options(design[len(pattern):], patterns)
 
-    return False
+    cache[design] = count
+    return count
 
 
 with open("input.txt") as file:
@@ -17,4 +22,4 @@ patterns_text, designs_text = text_input.strip().split("\n\n")
 patterns = patterns_text.strip().split(", ")
 designs = designs_text.strip().split("\n")
 
-print(sum([is_design_possible(design, patterns) for design in designs]))
+print(sum([count_design_options(design, patterns) for design in designs]))
