@@ -1,3 +1,6 @@
+import itertools
+
+
 def is_track(c):
     return c in (".", "S", "E")
 
@@ -6,8 +9,7 @@ with open("input.txt") as file:
     grid = [line.strip() for line in file.readlines()]
 
 n_rows, n_cols = len(grid), len(grid[0])
-walls, track = set(), set()
-cheats_vertical, cheats_horizontal = [], []
+track = set()
 start, end = None, None
 for row in range(n_rows):
     for col in range(n_cols):
@@ -21,13 +23,6 @@ for row in range(n_rows):
             track.add(coords)
         elif char == ".":
             track.add(coords)
-        else:
-            walls.add(coords)
-            if (0 < row < n_rows - 1) and (0 < col < n_cols - 1):
-                if is_track(grid[row - 1][col]) and is_track(grid[row + 1][col]):
-                    cheats_vertical.append(coords)
-                if is_track(grid[row][col - 1]) and is_track(grid[row][col + 1]):
-                    cheats_horizontal.append(coords)
 
 row, col = start
 pico_from_start = {start: 0}
@@ -43,14 +38,13 @@ while (row, col) != end:
             break
     row, col = row_next, col_next
 
-pico_start_to_end = pico_from_start[end]
-threshold = 100
+pico_saved_threshold = 100
+cheat_max = 20
 count = 0
-for (row, col) in cheats_vertical:
-    if (abs(pico_from_start[(row - 1, col)] - pico_from_start[(row + 1, col)]) - 2) >= threshold:
-        count += 1
-for (row, col) in cheats_horizontal:
-    if (abs(pico_from_start[(row, col - 1)] - pico_from_start[(row, col + 1)]) - 2) >= threshold:
+for cheat_start, cheat_end in itertools.combinations(track, 2):
+    distance = abs(cheat_start[0] - cheat_end[0]) + abs(cheat_start[1] - cheat_end[1])
+    if (distance <= cheat_max) and \
+       (abs(pico_from_start[cheat_start] - pico_from_start[cheat_end]) - distance) >= pico_saved_threshold:
         count += 1
 
 print(count)
