@@ -1,6 +1,6 @@
 import functools
 
-with (open("input.txt") as f):
+with (open("input_sample.txt") as f):
     grid = [line.strip() for line in f.readlines()]
 
 @functools.cache
