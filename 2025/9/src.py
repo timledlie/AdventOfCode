@@ -1,5 +1,5 @@
 import itertools
-from shapely.geometry import Point, Polygon
+from shapely.geometry import Polygon
 
 with (open("input.txt") as f):
     red_tile_coords = [tuple(map(int, line.split(','))) for line in f.readlines()]
