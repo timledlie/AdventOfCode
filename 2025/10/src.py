@@ -17,7 +17,8 @@ with (open("input.txt") as f):
         machine_definitions.append(MachineDefinition(buttons, joltages))
 
 
-# Model the problem as a system of linear equations while minimize the sum of the variables.
+# Model the problem as a system of linear equations.
+# We want the integer solutions that minimize the sum of the variables.
 #
 # For example:
 # buttons: (3) (1,3) (2) (2,3) (0,2) (0,1)
@@ -25,12 +26,10 @@ with (open("input.txt") as f):
 # joltages: {3,5,4,7}
 #
 # This produces the following system of equations:
-# v4 + v5      = 3  (we need to press buttons v4 and v5 a total of 3 times)
+# v4 + v5      = 3  (press buttons v4 and v5 a total of 3 times)
 # v1 + v5      = 5
 # v2 + v3 + v4 = 4
 # v0 + v1 + v3 = 7
-#
-# We find the positive, integer solutions to this system that minimizes the sum of the variables.
 def find_min_presses_to_configure(buttons_options, joltages_goal):
     variables = [pulp.LpVariable("v" + str(i), lowBound=0, cat="Integer") for i in range(len(buttons_options))]
 
